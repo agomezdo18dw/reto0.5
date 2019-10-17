@@ -24,7 +24,7 @@ class CreateTableProductos extends Migration
             $table->integer('Stock');
             $table->char('EnlaceExterno',50);
             
-            $table->foreign('ID_Tienda')->references('ID_Tienda')->on('Tiendas');
+            $table->foreign('ID_Tienda')->references('ID_Tienda')->on('Tiendas')->onDelete('cascade')->onUpdate('cascade');
         });
 
 
