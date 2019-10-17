@@ -13,7 +13,7 @@ class CreateTableProductos extends Migration
      */
     public function up()
     {
-        Schema::create('Productos', function (Blueprint $table) {
+        /*Schema::create('Productos', function (Blueprint $table) {
             $table->increments('ID_Producto');
             $table->unsignedInteger('ID_Tienda');
             $table->char('Nombre',50);
@@ -25,7 +25,7 @@ class CreateTableProductos extends Migration
             $table->char('EnlaceExterno',50);
             
             $table->foreign('ID_Tienda')->references('ID_Tienda')->on('Tiendas');
-        });
+        });*/
 
 
     }
