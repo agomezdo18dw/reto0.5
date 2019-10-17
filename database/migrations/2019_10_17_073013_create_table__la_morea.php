@@ -13,9 +13,12 @@ class CreateTableLaMorea extends Migration
      */
     public function up()
     {
-        Schema::create('table__la_morea', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+        Schema::create('LaMorea', function (Blueprint $table) {
+            $table->increments('ID_LaMorea');
+            $table->char('Localizacion',250);
+            $table->char('Informacion',500);
+            $table->char('Horario_Normal',30);
+            $table->char('Horario_Festivos',30);
         });
     }
 
@@ -26,6 +29,6 @@ class CreateTableLaMorea extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table__la_morea');
+        Schema::dropIfExists('LaMorea');
     }
 }

@@ -13,9 +13,12 @@ class CreateTableTiendas extends Migration
      */
     public function up()
     {
-        Schema::create('table__tiendas', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+        Schema::create('Tiendas', function (Blueprint $table) {
+            $table->increments('ID_Tienda');
+            $table->char('Nombre',50);
+            $table->char('Horario_Normal',30);
+            $table->char('Horario_Festivo',30);
+            $table->char('Sector',30);
         });
     }
 
@@ -26,6 +29,6 @@ class CreateTableTiendas extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table__tiendas');
+        Schema::dropIfExists('Tiendas');
     }
 }
