@@ -74,10 +74,6 @@ nav li{
    	border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
 }
 
-nav li:hover{
-	background-color: #BDFF51;
-}
-
 #Btrabajador{
 	align-self: flex-end;
 }
