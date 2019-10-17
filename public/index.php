@@ -48,20 +48,20 @@
 				<div id="info" class="mapaInfo">
 					<h2 class="trn" data-trn-key="InfTitulo">Información General:</h2>
 					<ul>
-						<li class="trn" data-trn-key="InfNumero"><strong>Numero Tlf:</strong>
+						<li><strong class="trn" data-trn-key="InfNumero">Numero Tlf:</strong>
 							<ul class="subinfo">
 								<li>948 243 796</li>
 							</ul>
 						</li>
-						<li class="trn" data-trn-key="InfCorreo"><strong>Correo electronico:</strong>
+						<li><strong  class="trn" data-trn-key="InfCorreo">Correo electronico:</strong>
 							<ul class="subinfo">
 								<li>info@lamorea.com</li>
 							</ul>
 						</li>
-						<li class="trn" data-trn-key="InfHorario"><strong>Horario:</strong>
+						<li><strong class="trn" data-trn-key="InfHorario">Horario:</strong>
 							<ul class="subinfo">
-								<li>Lunes - Sabado (10:00 - 22:10)</li>
-						    	<li>Domingo y festivos (cerrado)</li>
+								<li class="trn" data-trn-key="InfDatHorario1">Lunes - Sabado (10:00 - 22:10)</li>
+						    	<li class="trn" data-trn-key="InfDatHorario2">Domingo y festivos (cerrado)</li>
 							</ul>
 						</li>
 					</ul>

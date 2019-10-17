@@ -25,19 +25,29 @@ var dict = {
 					esp:"Informacion general:",
 				},
 				"InfNumero":{
-					eng:"Tlf number:&nbsp; 948 243 796",
-					eus:"Tlf zenbakia:&nbsp; 948 243 796",
-					esp:"Numero Tlf:&nbsp; 948 243 796",
+					eng:"Tlf number:",
+					eus:"Tlf zenbakia:",
+					esp:"Numero Tlf:",
 				},
 				"InfCorreo":{
-					eng:"Email:&nbsp; info@lamorea.com",
-					eus:"E-mail:&nbsp; info@lamorea.com",
-					esp:"Correo electronico:&nbsp; info@lamorea.com",
+					eng:"Email:",
+					eus:"E-mail:",
+					esp:"Correo electronico:",
 				},
 				"InfHorario":{
-					eng:"Schedule:<br>&nbsp;Monday - Saturday (10:00 - 22:10)<br>&nbsp;Sunday and holidays (closed)",
-					eus:"Ordutegia:<br>&nbsp;Astelehenetik - Larunbatera (10:00 - 22:10)<br>&nbsp;Igande eta jai egunak (itxita)",
-					esp:"Horario:<br>&nbsp;Lunes - Sabado (10:00 - 22:10)<br>&nbsp;Domingo y festivos (cerrado)",
+					eng:"Schedule:",
+					eus:"Ordutegia:",
+					esp:"Horario:",
+				},
+				"InfDatHorario1":{
+					eng:"Monday - Saturday (10:00 - 22:10)",
+					eus:"Astelehenetik - Larunbatera (10:00 - 22:10)",
+					esp:"Lunes - Sabado (10:00 - 22:10)",
+				},
+				"InfDatHorario2":{
+					eng:"Sunday and holidays (closed)",
+					eus:"Igande eta jai egunak (itxita)",
+					esp:"Domingo y festivos (cerrado)",
 				},
 }
 
