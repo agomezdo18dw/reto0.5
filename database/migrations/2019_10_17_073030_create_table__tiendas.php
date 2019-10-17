@@ -13,13 +13,13 @@ class CreateTableTiendas extends Migration
      */
     public function up()
     {
-        /*Schema::create('Tiendas', function (Blueprint $table) {
+        Schema::create('Tiendas', function (Blueprint $table) {
             $table->increments('ID_Tienda');
             $table->char('Nombre',50);
             $table->char('Horario_Normal',30);
             $table->char('Horario_Festivo',30);
             $table->char('Sector',30);
-        });*/
+        });
     }
 
     /**
