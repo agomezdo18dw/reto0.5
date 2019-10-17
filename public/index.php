@@ -1,60 +1,67 @@
-<?php
-
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
- */
-
-define('LARAVEL_START', microtime(true));
-
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels great to relax.
-|
-*/
-
-require __DIR__.'/../vendor/autoload.php';
-
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
-
-$app = require_once __DIR__.'/../bootstrap/app.php';
-
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
-
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-
-$response->send();
-
-$kernel->terminate($request, $response);
+<html>
+	<head>
+		<title>La Morea</title>
+		<link rel="stylesheet" type="text/css" href="estilos/index.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.translate.js"></script>
+		<script src="js/Diccionario.js"></script>
+	</head>
+	<body>
+		<section>
+			<header>
+				<img id="logo" src="imagenes/Logo.png">
+				<div id="RRSS">
+					<a href="https://www.facebook.com"><img class="rrss" src="imagenes/RRSS/facebook.png"></a>
+					<a href="https://www.twitter.com"><img class="rrss" src="imagenes/RRSS/twitter.png"></a>
+					<a href="https://www.youtube.com"><img class="rrss" src="imagenes/RRSS/youtube.png"></a>
+					<a href="https://www.instagram.com"><img class="rrss" src="imagenes/RRSS/instagram.png"></a>
+				</div>
+				<div id="Idiomas">
+					<img class="banderas" src="imagenes/Banderas/Basquecountry_flag.png" onclick="traducir('eus')">
+					<img class="banderas" src="imagenes/Banderas/spain_flag.png" onclick="traducir('esp')">
+					<img class="banderas" src="imagenes/Banderas/united_kingdom_flag.png" onclick="traducir('eng')">
+				</div>
+			</header>
+			<nav>
+				<ul>
+					<li class="trn" data-trn-key="MInicio">Inicio</li>
+					<li class="trn" data-trn-key="MTiendas">Tiendas</li>
+					<li id="Btrabajador" class="trn" data-trn-key="MTrabajador">Trabajador</li>
+				</ul>
+			</nav>
+			<div id="contenido">
+				<div id="infGen">
+					<div id="texto">
+						<h1>La Morea</h1>
+						<p class="trn" data-trn-key="Parrafo">
+							El Centro Comercial y de Ocio La Morea, abrió sus puertas al público el 16 de octubre del año 2002
+							con el objetivo de poner a disposición de sus clientes la mejor oferta en moda, restauración y ocio de toda la Comunidad Foral de Navarra. Comodidad, sensación de amplitud, ambiente agradable… son algunas de las características básicas que hacen que los visitantes de la Morea se sientan como en casa.
+							<br><br>
+							El Centro Comercial y de Ocio La Morea, está compuesto por más de 90 locales comerciales divididos en dos plantas. A día de hoy, La Morea se encuentra comercializada al 100%, dato significativo que demuestra la confianza en el centro por parte de los operadores. Un gran lucernario inunda de luz natural la galería con espacios de tránsito y descanso, como su gran plaza central con cafetería. Los dos niveles de la galería separan la zona de moda, regalos, complementos y servicios (planta baja) de la zona de restauración y ocio, donde además de los diversos locales destinados a bar-restaurante tradicional o comida rápida, nos encontramos con las 12 salas de Cines Golem La Morea.
+						</p>
+					</div>
+					<img id="imgInfGen" src="imagenes/imagenPrincipal.jpg">
+				</div>
+				<div class="mapaInfo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93701.97160905186!2d-1.7015418568523508!3d42.78440465933851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5091be0c678881%3A0x2943da9e1fdb0643!2sCentro%20Comercial%20La%20Morea!5e0!3m2!1ses!2ses!4v1571226491676!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<div id="info" class="mapaInfo">
+					<h2 class="trn" data-trn-key="InfTitulo">Información General:</h2>
+					<ul>
+						<li class="trn" data-trn-key="InfNumero"><strong>Numero Tlf:</strong>  &nbsp; 948 243 796</li>
+						<li class="trn" data-trn-key="InfCorreo"><strong>Correo electronico:</strong>  &nbsp; info@lamorea.com</li>
+						<li class="trn" data-trn-key="InfHorario"><strong>Horario:</strong><br>
+							&nbsp;Lunes - Sabado (10:00 - 22:10)<br>
+						    &nbsp;Domingo y festivos (cerrado)
+						</li>
+					</ul>
+				</div>
+			</div>
+			<footer>
+				<p>
+					Adrián Gómez, Iñigo Perez @ Zubiri manteo
+				</p>
+			</footer>
+		</section>
+	</body>
+</html>
