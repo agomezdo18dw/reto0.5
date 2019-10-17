@@ -11,10 +11,10 @@
 			<header>
 				<img id="logo" src="imagenes/Logo.png">
 				<div id="RRSS">
-					<a href="https://www.facebook.com"><img class="rrss" src="imagenes/RRSS/facebook.png"></a>
-					<a href="https://www.twitter.com"><img class="rrss" src="imagenes/RRSS/twitter.png"></a>
-					<a href="https://www.youtube.com"><img class="rrss" src="imagenes/RRSS/youtube.png"></a>
-					<a href="https://www.instagram.com"><img class="rrss" src="imagenes/RRSS/instagram.png"></a>
+					<a href="https://www.facebook.com" target="_BLANK"><img class="rrss" src="imagenes/RRSS/facebook.png"></a>
+					<a href="https://www.twitter.com" target="_BLANK"><img class="rrss" src="imagenes/RRSS/twitter.png"></a>
+					<a href="https://www.youtube.com" target="_BLANK"><img class="rrss" src="imagenes/RRSS/youtube.png"></a>
+					<a href="https://www.instagram.com" target="_BLANK"><img class="rrss" src="imagenes/RRSS/instagram.png"></a>
 				</div>
 				<div id="Idiomas">
 					<img class="banderas" src="imagenes/Banderas/Basquecountry_flag.png" onclick="traducir('eus')">
@@ -48,13 +48,24 @@
 				<div id="info" class="mapaInfo">
 					<h2 class="trn" data-trn-key="InfTitulo">Información General:</h2>
 					<ul>
-						<li class="trn" data-trn-key="InfNumero"><strong>Numero Tlf:</strong>  &nbsp; 948 243 796</li>
-						<li class="trn" data-trn-key="InfCorreo"><strong>Correo electronico:</strong>  &nbsp; info@lamorea.com</li>
-						<li class="trn" data-trn-key="InfHorario"><strong>Horario:</strong><br>
-							&nbsp;Lunes - Sabado (10:00 - 22:10)<br>
-						    &nbsp;Domingo y festivos (cerrado)
+						<li class="trn" data-trn-key="InfNumero"><strong>Numero Tlf:</strong>
+							<ul class="subinfo">
+								<li>948 243 796</li>
+							</ul>
+						</li>
+						<li class="trn" data-trn-key="InfCorreo"><strong>Correo electronico:</strong>
+							<ul class="subinfo">
+								<li>info@lamorea.com</li>
+							</ul>
+						</li>
+						<li class="trn" data-trn-key="InfHorario"><strong>Horario:</strong>
+							<ul class="subinfo">
+								<li>Lunes - Sabado (10:00 - 22:10)</li>
+						    	<li>Domingo y festivos (cerrado)</li>
+							</ul>
 						</li>
 					</ul>
+					
 				</div>
 			</div>
 			<footer>
