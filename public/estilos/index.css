@@ -133,6 +133,11 @@ nav li:hover{
 	padding: 4%;
 	border-radius: 2% 2% 2% 2%;
 }
+
+.subinfo{
+	margin-left:5%;
+}
+
 #info h2{
 	margin-bottom: 8%;
 }
