@@ -16,7 +16,7 @@ class CreateTableLaMorea extends Migration
         Schema::create('LaMorea', function (Blueprint $table) {
             $table->increments('ID_LaMorea');
             $table->char('Localizacion',250);
-            $table->char('Informacion',500);
+            $table->char('Informacion',255);
             $table->char('Horario_Normal',30);
             $table->char('Horario_Festivos',30);
         });
