@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>La Morea/Trabajador</title>
+		<title>La Morea/Tienda</title>
 		<link rel="stylesheet" type="text/css" href="estilos/index.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.translate.js"></script>
@@ -23,7 +23,7 @@
 		</header>
 		<nav>
 			<ul id="Bcliente">
-				<a href="<?php echo route('/'); ?>"><li class="trn" data-trn-key="MInicio">Inicio</li></a>
+				<a href="<?php echo route('/'); ?>><li class="trn" data-trn-key="MInicio">Inicio</li></a>
 				<a href="<?php echo route('tiendas'); ?>"><li class="trn" data-trn-key="MTiendas">Tiendas</li></a>
 			</ul>
 			<ul id="Btrabajador" >
@@ -31,16 +31,7 @@
 			</ul>
 		</nav>
 		<section>
-			<div id="seleccionTienda">
-                <h2>En que tienda trabajas?</h2>
-                <form action="{{route('add')}}" method="POST">
-                    <select size="1" name="Tiendas" id="ListaTiendas">
-                        <option value="1">Mediamarkt</option>
-                        <option value="2">Zara</option>
-                        <option value="3">Game</option>
-					</select>
-                </form>
-            </div>
+			
 		</section>
 		<footer>
 			<p>

@@ -31,7 +31,7 @@
 			</ul>
 		</nav>
 		<section>
-			
+			<h2>Tiendas</h2>
 		</section>
 		<footer>
 			<p>

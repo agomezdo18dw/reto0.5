@@ -22,3 +22,7 @@ Route::get('tiendas',function(){
 Route::get('trabajador',function(){
     return view('trabajador');
 })->name('trabajador');
+
+Route::get('add',function(){
+    return view('');
+});
