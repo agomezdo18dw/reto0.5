@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 class workerControler extends Controller
 {
     public function recibir_id_tienda($respuesta){
-        $Tienda_ID = $respuesta->method();
-        if($respuesta->method('post')){
-            echo "recibo el ID de la tienda";
-        }
+        $Tienda_ID = $respuesta->input("Tiendas");
+        return view('tienda',['ID' => $Tienda_ID]);
     }
 }
