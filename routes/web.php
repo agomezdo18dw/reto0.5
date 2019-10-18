@@ -13,4 +13,12 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
+
+Route::get('tiendas',function(){
+    return view('tiendas');
+})->name('tiendas');
+
+Route::get('trabajador',function(){
+    return view('trabajador');
+})->name('trabajador');
