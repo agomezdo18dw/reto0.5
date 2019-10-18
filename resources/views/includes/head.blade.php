@@ -4,6 +4,6 @@
 	<script type="text/javascript" src="{{ URL::asset('js/Traductor/jquery.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('js/Traductor/jquery.translate.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('js/Traductor/Diccionario.js') }}"></script>
-    <link rel="stylesheet" href="{{ URL::asset('/css/header.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/css/css.css') }}">
 </head>
     <body>
