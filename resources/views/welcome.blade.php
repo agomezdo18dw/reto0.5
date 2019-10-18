@@ -1,35 +1,8 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>La Morea</title>
-		<link rel="stylesheet" type="text/css" href="estilos/index.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery.translate.js"></script>
-		<script src="js/Diccionario.js"></script>
-	</head>
-	<body>
-		<header>
-			<img id="logo" src="imagenes/Logo.png">
-			<div id="RRSS">
-				<a href="https://www.facebook.com/LaMoreaCC" target="_BLANK"><img class="rrss" src="imagenes/RRSS/facebook.png"></a>
-				<a href="https://twitter.com/la_morea" target="_BLANK"><img class="rrss" src="imagenes/RRSS/twitter.png"></a>
-				<a href="https://www.youtube.com/channel/UCzpwdk2Fe9SwLYByWiZQZ1Q" target="_BLANK"><img class="rrss" src="imagenes/RRSS/youtube.png"></a>
-				<a href="https://www.instagram.com/la_morea/" target="_BLANK"><img class="rrss" src="imagenes/RRSS/instagram.png"></a>
-			</div>
-			<div id="Idiomas">
-                <img class="banderas" src="imagenes/Banderas/united_kingdom_flag.png" onclick="traducir('eng')">				
-				<img class="banderas" src="imagenes/Banderas/spain_flag.png" onclick="traducir('esp')">
-                <img class="banderas" src="imagenes/Banderas/Basquecountry_flag.png" onclick="traducir('eus')">
-			</div>
-		</header>
-		<nav>
-			<ul id="Bcliente">
-				<a><li class="trn" data-trn-key="MInicio">Inicio</li></a>
-				<a href="<?php echo route('tiendas'); ?>"><li class="trn" data-trn-key="MTiendas">Tiendas</li></a>
-			</ul>
-			<ul id="Btrabajador" >
-				<a href="<?php echo route('trabajador'); ?>"><li class="trn" data-trn-key="MTrabajador">Trabajador</li></a>
-			</ul>
-		</nav>
+	@include('includes.head')
+        @include('includes.header')
+        @include('includes.nav')
 		<section>
 			<div id="contenido">
 				<div id="infGen">
@@ -42,7 +15,7 @@
 							El Centro Comercial y de Ocio La Morea, está compuesto por más de 90 locales comerciales divididos en dos plantas. A día de hoy, La Morea se encuentra comercializada al 100%, dato significativo que demuestra la confianza en el centro por parte de los operadores. Un gran lucernario inunda de luz natural la galería con espacios de tránsito y descanso, como su gran plaza central con cafetería. Los dos niveles de la galería separan la zona de moda, regalos, complementos y servicios (planta baja) de la zona de restauración y ocio, donde además de los diversos locales destinados a bar-restaurante tradicional o comida rápida, nos encontramos con las 12 salas de Cines Golem La Morea.
 						</p>
 					</div>
-					<img id="imgInfGen" src="imagenes/imagenPrincipal.jpg">
+					<img id="imgInfGen" src="img/imagenPrincipal.jpg">
 				</div>
 				<div class="mapaInfo">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93701.97160905186!2d-1.7015418568523508!3d42.78440465933851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5091be0c678881%3A0x2943da9e1fdb0643!2sCentro%20Comercial%20La%20Morea!5e0!3m2!1ses!2ses!4v1571226491676!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
