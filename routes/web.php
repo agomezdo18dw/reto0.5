@@ -23,6 +23,5 @@ Route::get('trabajador',function(){
     return view('trabajador');
 })->name('trabajador');
 
-Route::get('add',function(){
-    return view('');
-});
+Route::get('tienda/recibir_id_tienda','workerControler@recibir_id_tienda')->name('IDtienda');
+
