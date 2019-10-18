@@ -2,11 +2,11 @@
 <html>
 <?php
 	if(isset($_SESSION['IDtienda'])){
-		$_SESSION['IDtienda']=$ID;
+		
 	}
 	else
 	{
-		
+		$_SESSION['IDtienda']=$ID;
 	}
 	
 	

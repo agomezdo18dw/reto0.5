@@ -12,6 +12,7 @@
                         <option value="2" >Zara</option>
                         <option value="3" >Game</option>
 					</select>
+                    <input type="submit" name="entrar" value="entrar">
                 </form>
             </div>
 		</section>
