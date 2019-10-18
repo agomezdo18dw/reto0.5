@@ -18,7 +18,7 @@
 					<img id="imgInfGen" src="img/imagenPrincipal.jpg">
 				</div>
 				<div class="mapaInfo">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93701.97160905186!2d-1.7015418568523508!3d42.78440465933851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5091be0c678881%3A0x2943da9e1fdb0643!2sCentro%20Comercial%20La%20Morea!5e0!3m2!1ses!2ses!4v1571226491676!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93701.97160905186!2d-1.7015418568523508!3d42.78440465933851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5091be0c678881%3A0x2943da9e1fdb0643!2sCentro%20Comercial%20La%20Morea!5e0!3m2!1ses!2ses!4v1571226491676!5m2!1ses!2ses"></iframe>
 				</div>
 				<div id="info" class="mapaInfo">
 					<h2 class="trn" data-trn-key="InfTitulo">Información General:</h2>
