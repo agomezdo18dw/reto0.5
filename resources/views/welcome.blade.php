@@ -1,100 +1,79 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+<html>
+	<head>
+		<title>La Morea</title>
+		<link rel="stylesheet" type="text/css" href="estilos/index.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.translate.js"></script>
+		<script src="js/Diccionario.js"></script>
+	</head>
+	<body>
+		<header>
+			<img id="logo" src="imagenes/Logo.png">
+			<div id="RRSS">
+				<a href="https://www.facebook.com/LaMoreaCC" target="_BLANK"><img class="rrss" src="imagenes/RRSS/facebook.png"></a>
+				<a href="https://twitter.com/la_morea" target="_BLANK"><img class="rrss" src="imagenes/RRSS/twitter.png"></a>
+				<a href="https://www.youtube.com/channel/UCzpwdk2Fe9SwLYByWiZQZ1Q" target="_BLANK"><img class="rrss" src="imagenes/RRSS/youtube.png"></a>
+				<a href="https://www.instagram.com/la_morea/" target="_BLANK"><img class="rrss" src="imagenes/RRSS/instagram.png"></a>
+			</div>
+			<div id="Idiomas">
+				<img class="banderas" src="imagenes/Banderas/Basquecountry_flag.png" onclick="traducir('eus')">
+				<img class="banderas" src="imagenes/Banderas/spain_flag.png" onclick="traducir('esp')">
+				<img class="banderas" src="imagenes/Banderas/united_kingdom_flag.png" onclick="traducir('eng')">
+			</div>
+		</header>
+		<nav>
+			<ul id="Bcliente">
+				<a href="route(/)"><li class="trn" data-trn-key="MInicio">Inicio</li></a>
+				<a href="route(/tiendas)"><li class="trn" data-trn-key="MTiendas">Tiendas</li></a>
+			</ul>
+			<ul id="Btrabajador" >
+				<a href="route(/trabajador)"><li class="trn" data-trn-key="MTrabajador">Trabajador</li></a>
+			</ul>
+		</nav>
+		<section>
+			<div id="contenido">
+				<div id="infGen">
+					<div id="texto">
+						<h1>La Morea</h1>
+						<p class="trn" data-trn-key="Parrafo">
+							El Centro Comercial y de Ocio La Morea, abrió sus puertas al público el 16 de octubre del año 2002
+							con el objetivo de poner a disposición de sus clientes la mejor oferta en moda, restauración y ocio de toda la Comunidad Foral de Navarra. Comodidad, sensación de amplitud, ambiente agradable… son algunas de las características básicas que hacen que los visitantes de la Morea se sientan como en casa.
+							<br><br>
+							El Centro Comercial y de Ocio La Morea, está compuesto por más de 90 locales comerciales divididos en dos plantas. A día de hoy, La Morea se encuentra comercializada al 100%, dato significativo que demuestra la confianza en el centro por parte de los operadores. Un gran lucernario inunda de luz natural la galería con espacios de tránsito y descanso, como su gran plaza central con cafetería. Los dos niveles de la galería separan la zona de moda, regalos, complementos y servicios (planta baja) de la zona de restauración y ocio, donde además de los diversos locales destinados a bar-restaurante tradicional o comida rápida, nos encontramos con las 12 salas de Cines Golem La Morea.
+						</p>
+					</div>
+					<img id="imgInfGen" src="imagenes/imagenPrincipal.jpg">
+				</div>
+				<div class="mapaInfo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93701.97160905186!2d-1.7015418568523508!3d42.78440465933851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5091be0c678881%3A0x2943da9e1fdb0643!2sCentro%20Comercial%20La%20Morea!5e0!3m2!1ses!2ses!4v1571226491676!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<div id="info" class="mapaInfo">
+					<h2 class="trn" data-trn-key="InfTitulo">Información General:</h2>
+					<ul>
+						<li><strong class="trn" data-trn-key="InfNumero">Numero Tlf:</strong>
+							<ul class="subinfo">
+								<li>948 243 796</li>
+							</ul>
+						</li>
+						<li><strong  class="trn" data-trn-key="InfCorreo">Correo electronico:</strong>
+							<ul class="subinfo">
+								<li>info@lamorea.com</li>
+							</ul>
+						</li>
+						<li><strong class="trn" data-trn-key="InfHorario">Horario:</strong>
+							<ul class="subinfo">
+								<li class="trn" data-trn-key="InfDatHorario1">Lunes - Sabado (10:00 - 22:10)</li>
+						    	<li class="trn" data-trn-key="InfDatHorario2">Domingo y festivos (cerrado)</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>
+				Adrián Gómez, Iñigo Perez @ Zubiri manteo
+			</p>
+		</footer>
+	</body>
 </html>
