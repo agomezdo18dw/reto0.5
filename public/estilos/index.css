@@ -3,37 +3,37 @@
 	padding:0;
 }
 body{
-	background-color: #ADADAD;
+	background-color: rgb(255, 255, 255);
 	margin: 0;
-}
-section{
-	background-color: grey;
-	margin: 1%;
-	width: 98%;
-	border-radius: 0em 0em 0.625em 0.625em;
+	border-radius: 0.625em 0.625em 0.625em 0.625em;
 }
 
 header{
-	background-color: red;
+	background-color: rgb(41, 41, 41);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	border-radius: 0.625em 0.625em 0em 0em;
 }
 
 #logo{
 	margin-left: 3%;
-	width: 10%;
-	height: 10%;
+	width: 20%;
+	height: 20%;
+	margin-bottom: 0;
 }
 
 #RRSS{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
+	margin-left: -1%;
 }
 
 #RRSS a{
 	width: 8%;
+	height: 65%;
 }
 
 .rrss{
@@ -45,12 +45,13 @@ header{
 	display: flex;
 	flex-direction:row;
 	align-self: center;
+	margin-right: -8%;
 }
 
 .banderas{
 	margin: 2%;
-	width: 20%;
-	height: 25%;
+	width: 15%;
+	height: 20%;
 }
 
 .banderas:hover{
@@ -60,31 +61,33 @@ header{
 nav{
 	width: 100%;
 	height: 10%;
-	background-color: grey;
+	background-color: rgb(110, 110, 110);
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 nav li{
 	list-style-type: none;
+	text-decoration: none; 
+	color: white;
    	display: inline;
-   	background-color: #FFF2CA;
+   	background-color: rgb(15, 95, 5);
    	border: 0.0625em solid black;
    	padding:0.5em;
    	margin-right: 0.5em;
-   	border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
-}
+	border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+	}
 
 nav li:hover{
-	background-color: #BDFF51;
+	background-color: rgb(41, 41, 41);
+	border-color: white;
 	cursor: pointer;
 }
 
-#Btrabajador{
-	align-self: flex-end;
+#Bcliente{
+	margin-left: 43%;
 }
-
 #contenido{
 	display: flex;
 	flex-direction: row;
@@ -128,7 +131,7 @@ nav li:hover{
 }
 
 #info{
-	background-color: #D0D0D0;
+	background-color: rgb(110, 110, 110);
 	width:30%;
 	padding: 4%;
 	border-radius: 2% 2% 2% 2%;
@@ -144,7 +147,8 @@ nav li:hover{
 footer{
 	display: flex;
 	justify-content: center;
-	background-color: #005308;
+	background-color: rgb(41, 41, 41);
+	color: white;
 	border-radius: 0em 0em 0.625em 0.625em;
 }
 
@@ -166,5 +170,9 @@ footer{
 		height: 70%;
 		margin-top: 2%;
 		border-radius: 5% 5% 5% 5%;
+	}
+	.mapaInfo iframe{
+		width: 100%;
+		
 	}
 }
