@@ -5,7 +5,6 @@
 body{
 	background-color: rgb(255, 255, 255);
 	margin: 0;
-	border-radius: 0.625em 0.625em 0.625em 0.625em;
 }
 
 header{
@@ -13,7 +12,7 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border-radius: 0.625em 0.625em 0em 0em;
+	border-radius: 12px 12px 0 0;
 }
 
 #logo{
@@ -28,7 +27,7 @@ header{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-left: -1%;
+	margin-left: 4%;
 }
 
 #RRSS a{
@@ -43,13 +42,12 @@ header{
 
 #Idiomas{
 	display: flex;
-	flex-direction:row;
+	flex-direction: row-reverse;
 	align-self: center;
-	margin-right: -8%;
 }
 
 .banderas{
-	margin: 2%;
+	margin: 0 2% 0 0 ;
 	width: 15%;
 	height: 20%;
 }
@@ -76,7 +74,7 @@ nav li{
    	border: 0.0625em solid black;
    	padding:0.5em;
    	margin-right: 0.5em;
-	border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+	border-radius: 10px;
 	}
 
 nav li:hover{
@@ -105,40 +103,43 @@ nav li:hover{
 }
 
 #texto{
+	text-align: justify;
 	margin-left: 2%;
 	width: 60%;
 }
 
 #texto h1{
-	margin: 5%;
+	margin: 2% 0% 2% 0%;
+	text-align: center;
 }
 
 #imgInfGen{
-	width: 30%;
-	height: 80%;
-	margin-top: 2%;
-	border-radius: 5% 5% 5% 5%;
+	width: 33%;
+	height: 83%;
+	margin-top: 4%;
+	border-radius: 25px;
 }
 
 .mapaInfo{
-	margin:3%;
+	margin: 3%;
 }
 
 .mapaInfo iframe{
-	width: 25em;
+	width: 34em;
 	height: 18.75em;
-	border-radius: 5% 5% 5% 5%;
+	border-radius: 20px;
 }
 
 #info{
 	background-color: rgb(110, 110, 110);
-	width:30%;
+	width: 29%;
 	padding: 4%;
-	border-radius: 2% 2% 2% 2%;
+	margin-left: 5%;
+	border-radius: 20px;
 }
 
 .subinfo{
-	margin-left:5%;
+	margin-left: 5%;
 }
 
 #info h2{
@@ -149,7 +150,7 @@ footer{
 	justify-content: center;
 	background-color: rgb(41, 41, 41);
 	color: white;
-	border-radius: 0em 0em 0.625em 0.625em;
+	border-radius: 0 0 12px 12px;
 }
 
 

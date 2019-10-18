@@ -16,9 +16,9 @@
 				<a href="https://www.instagram.com/la_morea/" target="_BLANK"><img class="rrss" src="imagenes/RRSS/instagram.png"></a>
 			</div>
 			<div id="Idiomas">
-				<img class="banderas" src="imagenes/Banderas/Basquecountry_flag.png" onclick="traducir('eus')">
+                <img class="banderas" src="imagenes/Banderas/united_kingdom_flag.png" onclick="traducir('eng')">				
 				<img class="banderas" src="imagenes/Banderas/spain_flag.png" onclick="traducir('esp')">
-				<img class="banderas" src="imagenes/Banderas/united_kingdom_flag.png" onclick="traducir('eng')">
+                <img class="banderas" src="imagenes/Banderas/Basquecountry_flag.png" onclick="traducir('eus')">
 			</div>
 		</header>
 		<nav>
