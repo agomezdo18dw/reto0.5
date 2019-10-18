@@ -2,7 +2,7 @@
 <html>
 	@include('includes.head')
         @include('includes.header')
-        @include('includes.nav')
+        @include('includes.nav')    
 		<section>
 			<div id="contenido">
 				<div id="infGen">

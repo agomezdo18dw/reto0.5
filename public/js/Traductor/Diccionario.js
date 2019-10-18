@@ -52,14 +52,5 @@ var dict = {
 }
 
 function traducir(idioma){
-	var idioma = idioma;
-	if(idioma === "eus"){
-		var translator =$('body').translate({lang: "eus", t: dict});
-	}
-	else if(idioma==="eng"){
-		var translator = $('body').translate({lang: "eng", t: dict});
-	} 
-	else if(idioma==="esp"){
-		var translator = $('body').translate({lang: "esp", t: dict});
-	}
+	var translator = $('body').translate({lang: idioma, t: dict});
 }
