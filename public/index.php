@@ -24,9 +24,9 @@
 			</header>
 			<nav>
 				<ul>
-					<li class="trn" data-trn-key="MInicio">Inicio</li>
-					<li class="trn" data-trn-key="MTiendas">Tiendas</li>
-					<li id="Btrabajador" class="trn" data-trn-key="MTrabajador">Trabajador</li>
+					<a href="route(/)"><li class="trn" data-trn-key="MInicio">Inicio</li></a>
+					<a href="route(/tiendas)"><li class="trn" data-trn-key="MTiendas">Tiendas</li></a>
+					<a href="route(/trabajador)"><li id="Btrabajador" class="trn" data-trn-key="MTrabajador">Trabajador</li></a>
 				</ul>
 			</nav>
 			<div id="contenido">
