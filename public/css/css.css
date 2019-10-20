@@ -110,10 +110,10 @@ nav a {
 }
 #texto{
 	text-align: justify;
-	width: 27.5em;
+	width: 40%;
 }
 #imgInfGen{
-	width: 	27.5em;
+	width: 40%;
 	border-radius: 25px;
 }
 #mapaInfo{
@@ -123,12 +123,12 @@ nav a {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	margin-bottom: 15em;
+	margin-bottom: 5em;
 	margin-top: 3em;
 	margin-right: 2em;
 }
 #mapa{
-	width: 25em;
+	width: 40%;
 	height: 25em;
 	border-radius: 20px;
 	
@@ -140,13 +140,16 @@ nav a {
 	border: 1.5px solid black;
 }
 #info{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	background-color: rgb(110, 110, 110);
-	width: 30em;
-	height: 15em;
+	width: 40%;
+	height: 20em;
 	border-radius: 20px;
 }
 #info h2{
-	margin: 4% 0 4% 0;
+	margin: 0 0 2% 0;
 	text-align: center;
 }
 #infoUL {
@@ -168,7 +171,7 @@ footer{
 /*------------------Responsive----------------*/
 @media screen and (max-width: 1000px) {
 	body{
-		font-size: 14px;
+		font-size: 13px;
 	}
 	#logo{
 		width: 9em;
@@ -202,7 +205,7 @@ footer{
 	}
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	body{
 		font-size: 14px;
 	}
@@ -246,6 +249,18 @@ footer{
 	#imgInfGen{
 		width: 90%;
 		margin-top: 2em;
+	}
+	#mapaInfo {
+		margin: 0;
+	}
+	#mapa{
+		width: 90%;
+		margin-top: 2em;
+	}
+	#info{
+		width: 90%;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 }
 /*----------------Fin Responsive-------------*/
