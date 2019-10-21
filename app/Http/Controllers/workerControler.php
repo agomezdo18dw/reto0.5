@@ -10,6 +10,4 @@ class workerControler extends Controller
         $ID=$respuesta->input("Tiendas");
         return view('tienda',compact('ID')); 
     }
-
-    
 }

@@ -167,6 +167,29 @@ footer{
 	border-radius: 0 0 12px 12px;
 	height: 50px;
 }
+/*----------------Contenido trabajador--------*/
+#seleccionTienda{
+	margin-top:2%;
+	text-align:center;
+}
+#seleccionTienda form{
+	margin:2%;
+}
+/*----------------fin trabajador--------------*/
+/*----------------Contenido tienda------------*/
+#GestionProducto{
+	text-align:center;
+	margin-top:2%;
+}
+#submenu{
+	text-align:center;
+	margin-top:2%;
+}
+#container{
+	margin-top:2%;
+	text-align:center;
+}
+/*----------------fin tienda------------------*/
 /*----------------fin contenido---------------*/
 /*------------------Responsive----------------*/
 @media screen and (max-width: 1000px) {

@@ -2,7 +2,8 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
+use DB;
 
-class Products extends Model {
-    //
+class Productos extends Model {
+    protected $table='Productos'; 
 }
