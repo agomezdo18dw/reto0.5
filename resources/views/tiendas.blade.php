@@ -1,20 +1,21 @@
 @include('includes.head')
         @include('includes.header')
         @include('includes.nav')
-		<section>
+		<section id="tiendas">
 			<h2>Tiendas</h2>
 			@foreach($tiendas as $tienda)
-				<div>
+				<div class="tienda">
 					<h3>{{$tienda->Nombre}}</h3>
 					@foreach($productos as $producto)
-						@if($tienda->PONER QUE EL ID DE LA TIENDA SEA IWAL AL DE LA TIENDA QUE ESTA EN EL PRODUCTO)
-						{{$producto['ID_Producto']}}<br>
-						{{$producto['Nombre']}}<br>
-						{{$producto['Precio_venta']}}<br>
-					@endif
+						@if($tienda->ID_Tienda === $producto->ID_Tienda)
+							<div class="producto">
+								<h4>{{$producto->Nombre}}</h4><br>
+								<h4>{{$producto->Precio_venta}}</h4><br>
+								<h4>{{$producto->Stock}}</h4>
+							</div>
+						@endif	
 					@endforeach
 				</div>
-
 			@endforeach
 		</section>
 		@include('includes.footer')

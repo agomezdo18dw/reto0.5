@@ -191,6 +191,33 @@ footer{
 }
 /*----------------fin tienda------------------*/
 /*----------------fin contenido---------------*/
+/*-------------------Tiendas------------------*/
+#tiendas{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.tienda{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	background-color: rgb(209, 119, 119);
+}
+.tienda h3 {
+	margin: 0;
+	height: 0;
+}
+.producto{
+	text-align: center;
+	width: 30%;
+	background-color: rgb(75, 203, 235);
+	border-radius: 20px;
+	border: 1px solid black;
+	margin-top: 5em;
+}
+/*-----------------Fin Tiendas----------------*/
 /*------------------Responsive----------------*/
 @media screen and (max-width: 1000px) {
 	body{
