@@ -12,13 +12,13 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach($productos as $producto):?>
+					@foreach($productos as $producto)
 						<tr>
-							<td><?=$producto['ID_Producto'] ?></td>
-							<td><?=$producto['Nombre'] ?></td>
-							<td><?=$producto['Precio_venta'] ?></td>
+							<td>{{$producto['ID_Producto']}}</td>
+							<td>{{$producto['Nombre']}}</td>
+							<td>{{$producto['Precio_venta']}}</td>
 						</tr>
-					<?php endforeach ?>
+					@endforeach
 				</tbody>
 			</table>
 		</section>
