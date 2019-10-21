@@ -19,8 +19,8 @@ class CreateTableProductos extends Migration
             $table->char('Nombre',50);
             $table->binary('Foto');
             $table->char('Descripcion',150);
-            $table->float('Precio_venta', 2);
-            $table->float('Precio_compra', 2);
+            $table->float('Precio_venta', 6, 2);
+            $table->float('Precio_compra', 4, 2);
             $table->integer('Stock');
             $table->char('EnlaceExterno',50);
             
