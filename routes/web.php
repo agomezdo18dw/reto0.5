@@ -19,14 +19,6 @@ Route::get('trabajador',function(){
     return view('trabajador');
 })->name('trabajador');
 
-Route::get('/MostrarProductos/{id}',function($id){
-    return view('tienda',$id);
-})->name('VerProductos');
-
-Route::get('/InsertarProductos/{id}',function($id){
-    return view('tienda',$id);
-})->name('AñadirProductos');
-
 Route::post('tienda','workerControler@recibir_id_tienda')->name('IDtienda');
 
 Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');

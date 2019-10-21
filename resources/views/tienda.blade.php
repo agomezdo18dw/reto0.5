@@ -12,8 +12,9 @@
 		<section>
 			<h1 id="GestionProducto">Gestion de productos</h1>
 			<div id="submenu">
-				<button id="MostrarProductos" href="/MostrarProductos/{$_SESSION['IDtienda']}">Mostrar Productos</button>
-				<button id="InsertarProductos" href="/InsertarProductos/{$_SESSION['IDtienda']}">Insertar Productos</button>
+				<button name="MostrarProductos" onClick="location.href='/MostrarProductos/{$_SESSION['IDtienda']}'">Mostrar productos</button>
+				<button name="InsertarProductos" onClick="location.href='/InsertarProductos/{$_SESSION['IDtienda']}'">Mostrar productos</button>
+				
 			</div>	
 			<div id="container">
 				<?php 
