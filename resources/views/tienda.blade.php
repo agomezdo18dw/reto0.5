@@ -12,7 +12,7 @@
 		<section>
 			<h1>Gestion de productos</h1>
 			<div id="mostrarProductos">
-				
+				mostrar_productos($_SESSION['IDtienda']);
 			</div>
 			<div id="agregarProductos">
 				<form action="{{route('')}}" method="post">
