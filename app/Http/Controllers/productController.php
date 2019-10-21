@@ -10,6 +10,7 @@ class productController extends Controller
 {
     public function recogerProductos(){
         $productos = Product::all();
-        return view('tiendas')->with(['productos' => $productos]);
+        $tiendas = Tienda::all();
+        return view('tiendas')->with(['tiendas' => $tiendas, 'productos' => $productos]);
     }
 }

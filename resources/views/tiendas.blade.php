@@ -3,23 +3,18 @@
         @include('includes.nav')
 		<section>
 			<h2>Tiendas</h2>
-			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Nombre</th>
-						<th>Precio</th>
-					</tr>
-				</thead>
-				<tbody>
+			@foreach($tiendas as $tienda)
+				<div>
+					<h3>{{$tienda->Nombre}}</h3>
 					@foreach($productos as $producto)
-						<tr>
-							<td>{{$producto['ID_Producto']}}</td>
-							<td>{{$producto['Nombre']}}</td>
-							<td>{{$producto['Precio_venta']}}</td>
-						</tr>
+						@if($tienda->PONER QUE EL ID DE LA TIENDA SEA IWAL AL DE LA TIENDA QUE ESTA EN EL PRODUCTO)
+						{{$producto['ID_Producto']}}<br>
+						{{$producto['Nombre']}}<br>
+						{{$producto['Precio_venta']}}<br>
+					@endif
 					@endforeach
-				</tbody>
-			</table>
+				</div>
+
+			@endforeach
 		</section>
 		@include('includes.footer')
