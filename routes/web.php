@@ -15,12 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('/');
 
-Route::get('tiendas',function(){
-    return view('tiendas');
-})->name('tiendas');
-
 Route::get('trabajador',function(){
     return view('trabajador');
 })->name('trabajador');
 
 Route::post('tienda','workerControler@recibir_id_tienda')->name('IDtienda');
+
+Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');
+
