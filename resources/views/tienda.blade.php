@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
 <?php
 	if(isset($_SESSION['IDtienda'])){
 		
 	}
-	else
-	{
+	else{
 		$_SESSION['IDtienda']=$ID;
 	}
-	
-	
 ?>
 @include('includes.head')
         @include('includes.header')
@@ -17,10 +12,4 @@
 		<section>
 
 		</section>
-		<footer>
-			<p>
-				Adrián Gómez, Iñigo Perez @ Zubiri manteo
-			</p>
-		</footer>
-	</body>
-</html>
+		@include('includes.footer')
