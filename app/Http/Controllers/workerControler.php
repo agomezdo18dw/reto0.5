@@ -8,6 +8,6 @@ class workerControler extends Controller
 {
     public function recibir_id_tienda(Request $respuesta){
         $ID=$respuesta->input("Tiendas");
-        return view('tienda',['ID' =>$ID]); 
+        return view('tienda',compact('id')); 
     }
 }

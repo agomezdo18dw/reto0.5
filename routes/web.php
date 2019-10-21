@@ -23,5 +23,4 @@ Route::get('trabajador',function(){
     return view('trabajador');
 })->name('trabajador');
 
-Route::post('tienda/recibir_id_tienda','workerControler@recibir_id_tienda')->name('IDtienda');
-
+Route::post('tienda','workerControler@recibir_id_tienda')->name('IDtienda');
