@@ -17,7 +17,7 @@ class CreateTableProductos extends Migration
             $table->increments('ID_Producto');
             $table->unsignedInteger('ID_Tienda');
             $table->char('Nombre',50);
-            $table->binary('Foto');
+            $table->char('Foto', 50);
             $table->char('Descripcion',150);
             $table->float('Precio_venta', 6, 2);
             $table->float('Precio_compra', 4, 2);
