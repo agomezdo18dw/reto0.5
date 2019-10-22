@@ -12,7 +12,7 @@
 		<section>
 			<h1 class="TituloGestion">Gestion de productos</h1>
 			<div id="submenu">
-				<form method="POST" action="{{route('GestionProducto')}}">
+				<form method="post" action="{{route('GestionProducto',$_SESSION['IDtienda'])}}">
 				@csrf
 					<input type="submit" name="InsertarProducto" value="Añadir un producto nuevo">
 				</form>

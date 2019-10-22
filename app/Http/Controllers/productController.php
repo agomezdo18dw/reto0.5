@@ -21,8 +21,15 @@ class productController extends Controller
         recogerProductos();
     }
 
-    public function AñadirProducto($ID_Tienda){
-        
+    public function GestionProducto($ID_Tienda){
+        $IDtienda=$ID_Tienda;
         return view('GestionProducto')->with(['ID'=>$ID_Tienda]);
+    }
+
+    public function AñadirProducto($ID_Tienda){
+       $IDtienda=$ID_Tienda;
+       
+       $productos = Product::where("ID_Tienda","=",$IDtienda)->get();
+       return view('tienda2')->with(['ID'=>$ID_Tienda,'ID'=>$productos]);
     }
 }

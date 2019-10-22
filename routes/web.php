@@ -25,4 +25,6 @@ Route::get('comprar', 'productController@ComprarProducto')->name('comprar');
 
 Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');
 
-Route::post('GestionProducto','productController@AñadirProducto')->name('GestionProducto');
+Route::post('GestionProducto/{id}','productController@GestionProducto')->name('GestionProducto');
+
+Route::post('tienda','workerControler@AñadirProducto')->name('tienda2');
