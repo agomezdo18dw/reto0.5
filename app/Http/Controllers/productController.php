@@ -26,9 +26,22 @@ class productController extends Controller
         return view('GestionProducto')->with(['ID'=>$ID_Tienda]);
     }
 
-    public function vueltaTienda( $ID_Tienda){
-        $IDtienda=$ID_Tienda;
-        $productos = Product::where("ID_Tienda","=",$IDtienda)->get();
-        return view('tienda2')->with(['ID'=>$IDtienda]);
+    public function vueltaTienda(Request $ID_tienda){
+        $idtienda=$ID_tienda;
+        $nombre=$_POST['Nombre'];
+        $foto=$_POST['Foto'];
+        $descripcion=$_POST['Descripcion'];;
+        $precio=$_POST['Precio'];;
+        $stock=$_POST['Stock'];
+        $enlace=$_POST['Enlace_externo'];
+        $productos = Product::insert(["ID_Tienda"=>$idtienda, "Nombre"=>$nombre, "Foto"=>$foto, "Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]);
+        $productos = Product::where("ID_Tienda","=",$idtienda)->get();
+        return view('tienda')->with(['ID'=>$idtienda,'productos'=>$productos]);
+    }
+
+    public function eliminarProducto($IDproducto){
+        $prodcutos = Product::where("ID_Producto","=",$IDproducto)->delete();
+        $productos = Product::where("ID_Tienda","=",$idtienda)->get();
+        return view('tienda2')->with(['ID'=>$idtienda,'productos'=>$productos]);
     }
 }

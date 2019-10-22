@@ -28,3 +28,5 @@ Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');
 Route::post('GestionProducto/{ID}','productController@GestionProducto')->name('GestionProducto');
 
 Route::post('tienda/{id}','productController@vueltaTienda')->name('tienda2');
+
+Route::post('eliminar/{idproducto}','productController@eliminarProducto');

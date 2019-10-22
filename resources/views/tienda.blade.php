@@ -21,6 +21,7 @@
 				<div class="productos">
 						@foreach($productos as $producto)
 								<div class="producto">
+									<h4>ID Producto: {{$producto->ID_Producto}}</h4>
 									<h4>{{$producto->Nombre}}</h4><br>
 									<img src="{{$producto->Foto}}" class="imgProd">
 									<h4>{{$producto->Descripcion}}</h4><br>
@@ -31,7 +32,7 @@
 										<h4>Stock : {{$producto->Stock}}</h4><br>
 									@endif
 									<h4><a href="{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
-									<button name="EliminarProducto">Eliminar</button>
+									<button name="EliminarProducto" onclick="<a href='Route('eliminar','{{$producto->ID_Producto}}')'></a>">Eliminar</button>
 									<button name="ModificarProducto">Modificar</button>
 								</div>	
 						@endforeach
