@@ -12,10 +12,7 @@
 		<section>
 			<h1 id="GestionProducto">Gestion de productos</h1>
 			<div id="submenu">
-				<form method="POST" action="{{route('InsertarProducto')}}">
-				@csrf
-					<input type="submit" name="InsertarProductos" value="Insertar productos">
-				</form>
+				<button name="InsertarProductos"><a href="">Insertar Producto</a></button>
 			</div>	
 			<div id="container">
 				<?php 
@@ -41,6 +38,22 @@
 							//</form>
 					}
 				?>
+				<div class="productos">
+						@foreach($productos as $producto)
+							@if($tienda->ID_Tienda === $producto->ID_Tienda)
+								<div class="producto">
+									<h4>{{$producto->Nombre}}</h4><br>
+									<h4>{{$producto->Precio_venta}}</h4><br>
+									<h4>{{$producto->Stock}}</h4>
+									@if($producto->Stock === 0)
+										<p class="Agotado">AGOTADO</p>
+									@else
+										<button>Comprar</button>
+									@endif
+								</div>
+							@endif	
+						@endforeach
+					</div>
 			</div>
 		</section>
 		@include('includes.footer')
