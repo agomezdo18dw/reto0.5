@@ -7,9 +7,9 @@
                 <form action="{{route('IDtienda')}}" method="post">
                 @csrf
                     <select size="1" name="Tiendas" id="ListaTiendas">
-                        <option value="1" >Mediamarkt</option>
-                        <option value="2" >Zara</option>
-                        <option value="3" >Game</option>
+                        <option value="1" name="Mediamarkt">Mediamarkt</option>
+                        <option value="2" name="Zara">Zara</option>
+                        <option value="3" name="Game">Game</option>
 					</select>
                     <input type="submit" name="entrar" value="entrar">
                 </form>

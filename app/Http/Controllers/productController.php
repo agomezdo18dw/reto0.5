@@ -20,4 +20,9 @@ class productController extends Controller
         $producto->save();
         recogerProductos();
     }
+
+    public function AñadirProducto($ID_Tienda){
+        
+        return view('GestionProducto')->with(['ID'=>$ID_Tienda]);
+    }
 }

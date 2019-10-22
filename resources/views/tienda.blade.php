@@ -10,9 +10,12 @@
         @include('includes.header')
         @include('includes.nav')
 		<section>
-			<h1 id="GestionProducto">Gestion de productos</h1>
+			<h1 class="TituloGestion">Gestion de productos</h1>
 			<div id="submenu">
-				<button name="InsertarProductos"><a href="">Insertar Producto</a></button>
+				<form method="POST" action="{{route('GestionProducto')}}">
+				@csrf
+					<input type="submit" name="InsertarProducto" value="Añadir un producto nuevo">
+				</form>
 			</div>	
 			<div id="container">
 				<div class="productos">
@@ -32,7 +35,7 @@
 									<button name="ModificarProducto">Modificar</button>
 								</div>	
 						@endforeach
-					</div>
+				</div>
 			</div>
 		</section>
 		@include('includes.footer')

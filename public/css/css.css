@@ -178,7 +178,7 @@ footer{
 }
 /*----------------fin trabajador--------------*/
 /*----------------Contenido tienda------------*/
-#GestionProducto{
+.TituloGestion{
 	text-align:center;
 	margin-top:2%;
 }
