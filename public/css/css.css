@@ -173,6 +173,9 @@ footer{
 #seleccionTienda form{
 	margin:2%;
 }
+#Sectrabajador{
+	height: 16em;
+}
 /*----------------fin trabajador--------------*/
 /*----------------Contenido tienda------------*/
 #GestionProducto{
