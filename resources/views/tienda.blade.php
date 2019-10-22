@@ -12,16 +12,14 @@
 		<section>
 			<h1 id="GestionProducto">Gestion de productos</h1>
 			<div id="submenu">
-				<button name="MostrarProductos" onClick="location.href='/MostrarProductos/{$_SESSION['IDtienda']}'">Mostrar productos</button>
-				<button name="InsertarProductos" onClick="location.href='/InsertarProductos/{$_SESSION['IDtienda']}'">Mostrar productos</button>
-				
+				<form method="POST" action="{{route('InsertarProducto')}}">
+				@csrf
+					<input type="submit" name="InsertarProductos" value="Insertar productos">
+				</form>
 			</div>	
 			<div id="container">
 				<?php 
-					if(isset($_GET['MostrarProductos'])){
-							echo "pulsado mostrar productos";
-					}
-					elseif(isset($_GET['InsertarProductos'])){
+					if(isset($_POST['InsertarProductos'])){
 						echo "pulsado insertar productos";
 							//<form action="{{route('IDtienda')}}" method="post">
 							//	@csrf

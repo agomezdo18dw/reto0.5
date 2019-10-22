@@ -23,3 +23,4 @@ Route::post('tienda','workerControler@recibir_id_tienda')->name('IDtienda');
 
 Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');
 
+Route::post('tienda/añadir','productController@AñadirProducto')->name('InsertarProducto');
