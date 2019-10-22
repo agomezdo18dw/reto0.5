@@ -14,4 +14,10 @@ class productController extends Controller
         return view('tiendas')->with(['tiendas' => $tiendas, 'productos' => $productos]);
     }
 
+    public function ComprarProducto(Request $ID_Prod){
+        $producto = Product::where("ID_Producto", "=", $ID_Prod)->get();
+        $producto->Stock -= 1;
+        $producto->save();
+        recogerProductos();
+    }
 }

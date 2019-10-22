@@ -16,7 +16,7 @@
 									@if($producto->Stock === 0)
 										<p class="Agotado">AGOTADO</p>
 									@else
-										<button>Comprar</button>
+										<button onclick="{{route('comprar')}}">Comprar</button>
 									@endif
 								</div>
 							@endif	
