@@ -33,7 +33,7 @@
 										<h4>Stock : {{$producto->Stock}}</h4><br>
 									@endif
 									<h4><a href="http://{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
-									<button name="EliminarProducto" onclick="Route('eliminar','{{$producto->ID_Producto}}')">Eliminar</button>
+									<button name="EliminarProducto><a href='Route('editar','{{$producto->ID_Producto}}')'">Eliminar</a></button>
 									<button name="ModificarProducto" onclick="Route('editar','{{$producto->ID_Producto}}')">Modificar</button>
 								</div>	
 						@endforeach

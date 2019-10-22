@@ -41,7 +41,7 @@ class productController extends Controller
     }
 
     public function eliminarProducto($IDproducto){
-        $productos = Product::where("ID_Producto","=",$IDproducto)->delete();
+        Product::where("ID_Producto","=",$IDproducto)->delete();
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
         return view('tienda2')->with(['ID'=>$idtienda,'productos'=>$productos]);
     }
