@@ -37,7 +37,7 @@ class productController extends Controller
         $enlace=$request->get('Enlace_externo');
         Product::insert([["ID_Tienda"=>$idtienda, "Nombre"=>$nombre, "Foto"=>$foto, "Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]]);
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
-        return view('tienda')->with(['productos'=>$productos]);
+        return view('tienda')->with(['productos'=>$productos,'ID'=>$idtienda]);
     }
     
     public function eliminarProducto($IDproducto,Request $request){
@@ -63,6 +63,6 @@ class productController extends Controller
         $enlace=$request->get('Enlace_externo');
         Product::where('ID_Producto',$IDproducto)->update(["Stock"=>$stock]);
         $productos = Product::where('ID_Tienda',$IDtienda)->get();
-        return view('tienda')->with(['productos'=>$productos]);
+        return view('tienda')->with(['productos'=>$productos , 'ID'=>$IDtienda]);
     }
 }
