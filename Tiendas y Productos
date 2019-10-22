@@ -1,0 +1,16 @@
+TABLA TIENDAS:
+INSERT INTO `reto`.`Tiendas` (`Nombre`, `Horario_Normal`, `Horario_Festivo`, `Sector`) VALUES ('MediaMarkt', '', '', 'Tecnologia');
+INSERT INTO `reto`.`Tiendas` (`Nombre`, `Sector`) VALUES ('Zara', 'Ropa');
+INSERT INTO `reto`.`Tiendas` (`Nombre`, `Sector`) VALUES ('Game', 'Videojuegos');
+
+SELECT * FROM reto.Tiendas;
+
+TABLA PRODUCTOS:
+INSERT INTO `reto`.`Productos` (`ID_Tienda`, `Nombre`, `Precio_venta`, `Stock`) VALUES ('1', 'One Plus 7T Pro', '540.99', '8');
+INSERT INTO `reto`.`Productos` (`ID_Tienda`, `Nombre`, `Precio_venta`, `Stock`) VALUES ('2', 'Bolso', '19.99', '20');
+INSERT INTO `reto`.`Productos` (`ID_Tienda`, `Nombre`, `Precio_venta`, `Stock`) VALUES ('2', 'Blusa', '29.99', '30');
+INSERT INTO `reto`.`Productos` (`ID_Tienda`, `Nombre`, `Precio_venta`, `Stock`) VALUES ('3', 'GTA V', '14.99', '4');
+UPDATE `reto`.`Productos` SET `Stock`='0' WHERE `ID_Producto`='1';
+
+
+SELECT * FROM reto.Productos;
