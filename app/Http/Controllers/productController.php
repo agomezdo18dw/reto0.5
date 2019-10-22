@@ -14,12 +14,12 @@ class productController extends Controller
         return view('tiendas')->with(['tiendas' => $tiendas, 'productos' => $productos]);
     }
 
-    public function ComprarProducto(Request $ID_Prod){
+    /*public function ComprarProducto(Request $ID_Prod){
         $producto = Product::where("ID_Producto", "=", $ID_Prod)->get();
         $producto->Stock -= 1;
         $producto->save();
         recogerProductos();
-    }
+    }*/
 
     public function GestionProducto(request $request){
         $IDtienda=$request->get('IDtienda');
@@ -49,5 +49,11 @@ class productController extends Controller
     public function editarProducto($IDproducto) {
         $producto = Product::where("ID_Producto","=",$IDproducto)->get();
         return view('editar')->with(['producto'=>$producto]);
+    }
+
+    public function modificarProducto($IDproducto, request $request){
+        $stock=$request->get('Stock');
+        $producto = Product::where("ID_Producto","=",$IDproducto)->update('Stock', $stock);
+        vueltaTienda();
     }
 }

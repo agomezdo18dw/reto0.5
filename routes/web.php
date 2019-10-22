@@ -31,4 +31,10 @@ Route::post('tienda/{id}','productController@vueltaTienda')->name('tienda2');
 
 Route::post('editar/{idproducto}','productController@editarProducto')->name('editar');
 
+<<<<<<< HEAD
 Route::post('eliminar','productController@eliminarProducto')->name('eliminar');
+=======
+Route::post('modificar/{idproducto}','productController@modificarProducto')->name('modificar');
+
+Route::post('eliminar/{idproducto}','productController@eliminarProducto');
+>>>>>>> de85d9f6ea45a737a73deb517bc05dea9f7a09f3
