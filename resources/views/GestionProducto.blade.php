@@ -18,7 +18,7 @@
                     <label>Nombre :</label>
                         <input type="text" name="Nombre" require><br><br>
                     <label>Foto :</label>
-                        <input type="file" name="foto" require><br><br>
+                        <input type="file" name="foto" accept=".jpg, .jpeg, .png" require><br><br>
                     <label>Descripción :</label>
                         <input type="textarea" name="Descripcion" require><br><br>
                     <label>Precio :</label>

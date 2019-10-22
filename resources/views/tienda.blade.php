@@ -12,8 +12,9 @@
 		<section>
 			<h1 class="TituloGestion">Gestion de productos</h1>
 			<div id="submenu">
-				<form method="post" action="{{route('GestionProducto',$_SESSION['IDtienda'])}}">
-				@csrf
+				<form method="post" action="{{route('GestionProducto')}}">
+				@csrf$
+					<input type="hidden" name="IDtienda" value="{{$_SESSION['IDtienda']}}">
 					<input type="submit" name="InsertarProducto" value="Añadir un producto nuevo">
 				</form>
 			</div>	
@@ -32,7 +33,7 @@
 										<h4>Stock : {{$producto->Stock}}</h4><br>
 									@endif
 									<h4><a href="{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
-									<button name="EliminarProducto" onclick="Route('eliminar','{{$producto->ID_Producto}}')">Eliminar</button>
+									<button name="EliminarProducto" onclick="Route('eliminar','{{$producto->ID_Producto}}'">Eliminar</button>
 									<button name="ModificarProducto">Modificar</button>
 								</div>	
 						@endforeach
