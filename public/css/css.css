@@ -201,6 +201,7 @@ footer{
 }
 #tiendas h1{
 	margin: 1% 0;
+	font-size: 34px;
 }
 .tienda{
 	width: 95%;
@@ -208,19 +209,21 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 0 1% 0;
+	margin: 0 0 2em 0;
 	border-radius: 10px;
 
 }
 .tienda h2{
 	margin: 1% 0;
+	font-size: 25px;
 }
 .productos {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 0 0 1% 0;
+	flex-wrap: wrap;
+	margin: 0 0 2em 0;
 }
 .producto{
 	display: flex;
@@ -356,6 +359,32 @@ footer{
 		width: 90%;
 		margin-top: 2em;
 		margin-bottom: 2em;
+	}
+	#tiendas h1{
+		margin: 0.5em 0;
+		font-size: 28px;
+	}
+	.tienda{
+		width: 80%;
+	}
+	.tienda h2{
+		margin: 0.7em 0;
+		font-size: 20px;
+	}
+	.productos {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.producto {
+		width: 60%;
+		margin-bottom: 1em;
+	}
+	.producto h3 {
+		margin: 0.3em 0;
+	}
+	.descPrecioBot:hover{
+		cursor: pointer;
 	}
 }
 /*----------------Fin Responsive-------------*/
