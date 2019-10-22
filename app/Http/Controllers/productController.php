@@ -14,9 +14,4 @@ class productController extends Controller
         return view('tiendas')->with(['tiendas' => $tiendas, 'productos' => $productos]);
     }
 
-    public function AñadirProducto(Request $request){
-       if ($request->has('InsertarProductos')){
-        return view('tienda');
-       }
-    }
 }
