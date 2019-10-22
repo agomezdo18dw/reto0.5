@@ -31,7 +31,7 @@ class ProductosSeeder extends Seeder
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '1',
-            'Nombre' => 'OnePlus 7T',
+            'Nombre' => 'OnePlus 7T Pro Dorado',
             'Foto' => 'img/Productos/Mediamarkt/oneplus7pro.jpg',
             'Descripcion' => 'Ultimo movil lanzado por OnePlus',
             'Precio_venta' => '539.99',
