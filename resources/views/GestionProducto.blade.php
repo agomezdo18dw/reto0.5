@@ -13,7 +13,7 @@
 			<h1 class="TituloGestion">Gestion de productos</h1>
             <h2 class="TituloGestion">Añadir Producto</h2>
 			<div id="container">
-				<form action="{{route('tienda',$_SESSION['IDtienda'])}}" method="POST">
+				<form action="{{route('tienda2',$_SESSION['IDtienda'])}}" method="POST">
                 @csrf
                     <label>Nombre :</label>
                         <input type="text" name="Nombre" require><br><br>

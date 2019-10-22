@@ -25,4 +25,10 @@ class productController extends Controller
         $IDtienda=$ID_Tienda;
         return view('GestionProducto')->with(['ID'=>$ID_Tienda]);
     }
+
+    public function vueltaTienda( $ID_Tienda){
+        $IDtienda=$ID_Tienda;
+        $productos = Product::where("ID_Tienda","=",$IDtienda)->get();
+        return view('tienda2')->with(['ID'=>$IDtienda]);
+    }
 }
