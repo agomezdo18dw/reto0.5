@@ -65,5 +65,23 @@ class ProductosSeeder extends Seeder
             'Stock' => '4',
             'EnlaceExterno' => 'www.google.com'
         ]);
+        DB::table('Productos')->insert([
+            'ID_Tienda' => '4',
+            'Nombre' => 'GTA V',
+            'Foto' => 'GTAV.jpg',
+            'Descripcion' => 'Un juego muy bueno',
+            'Precio_venta' => '9.99',
+            'Stock' => '2',
+            'EnlaceExterno' => 'www.gta.com'
+        ]);
+        DB::table('Productos')->insert([
+            'ID_Tienda' => '5',
+            'Nombre' => 'Reloj',
+            'Foto' => 'garmin.jpg',
+            'Descripcion' => 'Reloj deportivo',
+            'Precio_venta' => '79.86',
+            'Stock' => '67',
+            'EnlaceExterno' => 'www.garmin.com'
+        ]);
     }
 }

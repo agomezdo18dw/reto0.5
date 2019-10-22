@@ -6,6 +6,20 @@ let comprobaciones = () => {
     let stock = document.getElementById("stock");
     let enlace = document.getElementById("enlace");
     console.log('todo ok');
+
+    
+}
+let redireccionar =()=>{
+    let ID_tienda=documnt.getElementById("IDtienda");
+    let texto=true;
+    if(texto==true){
+        location.href ="{{route('tienda2',"+ID_tienda+")}}";
+    }
+    else
+    {
+        alert("algo va mal");
+    }
+    
 }
 //Funcion que comprueba si hay numeros en el texto que le introduzcamos
 let tieneNumeros = (texto) => {

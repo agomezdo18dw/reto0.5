@@ -14,7 +14,7 @@ class CreateTableProductos extends Migration
     public function up()
     {
         Schema::create('Productos', function (Blueprint $table) {
-            $table->increments('ID_Producto');
+            $table->increments('ID_Producto')->onDelete('cascade')->onUpdate('cascade');
             $table->unsignedInteger('ID_Tienda');
             $table->char('Nombre',50);
             $table->char('Foto', 50);

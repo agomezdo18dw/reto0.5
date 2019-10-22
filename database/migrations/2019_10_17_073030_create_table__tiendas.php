@@ -14,7 +14,7 @@ class CreateTableTiendas extends Migration
     public function up()
     {
         Schema::create('Tiendas', function (Blueprint $table) {
-            $table->increments('ID_Tienda');
+            $table->increments('ID_Tienda')->onDelete('cascade')->onUpdate('cascade');
             $table->char('Nombre',50);
             $table->char('Horario_Normal',30);
             $table->char('Horario_Festivo',30);

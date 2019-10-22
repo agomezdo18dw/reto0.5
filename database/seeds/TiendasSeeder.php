@@ -29,5 +29,17 @@ class TiendasSeeder extends Seeder
             'Horario_Festivo' => 'Cerrado',
             'Sector' => 'Videojueos'
         ]);
+        DB::table('Tiendas')->insert([
+            'Nombre' => 'Fnac',
+            'Horario_Normal' => '10:00-22:00',
+            'Horario_Festivo' => 'Cerrado',
+            'Sector' => 'Tecnologia'
+        ]);
+        DB::table('Tiendas')->insert([
+            'Nombre' => 'InterSport',
+            'Horario_Normal' => '10:00-22:00',
+            'Horario_Festivo' => 'Cerrado',
+            'Sector' => 'Deporte'
+        ]);
     }
 }
