@@ -1,7 +1,7 @@
 @include('includes.head')
         @include('includes.header')
         @include('includes.nav')
-		<section>
+		<section id="Sectrabajador">
 			<div id="seleccionTienda">
                 <h2>En que tienda trabajas?</h2>
                 <form action="{{route('IDtienda')}}" method="post">

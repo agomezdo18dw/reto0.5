@@ -25,6 +25,9 @@
 									<h4>{{$producto->Stock}}</h4>
 									@if($producto->Stock === 0)
 										<p class="Agotado">AGOTADO</p>
+									@else
+										<button onclick="{{route('comprar')}}">Comprar</button>
+
 									@endif
 								</div>
 							@endif	
