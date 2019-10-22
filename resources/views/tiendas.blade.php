@@ -13,6 +13,11 @@
 									<h4>{{$producto->Nombre}}</h4><br>
 									<h4>{{$producto->Precio_venta}}</h4><br>
 									<h4>{{$producto->Stock}}</h4>
+									@if($producto->Stock === 0)
+										<p class="Agotado">AGOTADO</p>
+									@else
+										<button>Comprar</button>
+									@endif
 								</div>
 							@endif	
 						@endforeach

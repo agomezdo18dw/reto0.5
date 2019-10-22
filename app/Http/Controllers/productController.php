@@ -9,7 +9,7 @@ use App\Tienda;
 class productController extends Controller
 {
     public function recogerProductos(){
-        $productos = Product::where("Stock", ">", "0")->get();
+        $productos = Product::all();
         $tiendas = Tienda::all();
         return view('tiendas')->with(['tiendas' => $tiendas, 'productos' => $productos]);
     }
