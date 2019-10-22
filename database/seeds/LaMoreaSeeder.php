@@ -15,7 +15,7 @@ class LaMoreaSeeder extends Seeder
             'Localizacion' => 'Barrio La Morea, s/n, 31191 Cordovilla, Navarra',
             'Informacion' => '100 Tiendas, 14 Restaurantes, eventos, cine y mucho mas',
             'Horario_Normal' => '10:00 - 22:00',
-            'Horario_Festivo' => 'Cerrado',
+            'Horario_Festivos' => 'Cerrado',
         ]);
     }
 }

@@ -29,4 +29,6 @@ Route::post('GestionProducto','productController@GestionProducto')->name('Gestio
 
 Route::post('tienda/{id}','productController@vueltaTienda')->name('tienda2');
 
+Route::post('editar/{idproducto}','productController@editarProducto')->name('modificar');
+
 Route::post('eliminar/{idproducto}','productController@eliminarProducto');
