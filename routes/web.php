@@ -31,4 +31,4 @@ Route::post('tienda/{id}','productController@vueltaTienda')->name('tienda2');
 
 Route::post('editar/{idproducto}','productController@editarProducto')->name('editar');
 
-Route::post('eliminar/{idproducto}','productController@eliminarProducto');
+Route::post('eliminar','productController@eliminarProducto')->name('eliminar');

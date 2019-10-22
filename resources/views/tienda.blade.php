@@ -37,7 +37,7 @@
 										@csrf
 										<input type="submit" name="ModificarProducto" value="Modificar producto">
 									</form>
-									<button name="EliminarProducto><a href='Route('editar','{{$producto->ID_Producto}}')'">Eliminar</a></button>
+									<button name="EliminarProducto"><a href="{{route('eliminar',$producto->ID_Producto)}}">Eliminar</a></button>
 								</div>	
 						@endforeach
 				</div>
