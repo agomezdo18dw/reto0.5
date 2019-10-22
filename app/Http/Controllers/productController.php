@@ -30,14 +30,12 @@ class productController extends Controller
         $idtienda=$request->get('IDtienda');
         $nombre=$request->get('Nombre');
         $foto=$request->file('foto')->getClientOriginalName();
-        $request->file('foto')->move("public/img/Productos/".$idtienda."/".$foto);
+        $request->file('foto')->move("img/Productos/".$idtienda."/",$foto);
         $descripcion=$request->get('Descripcion');
         $precio=$request->get('Precio');
         $stock=$request->get('Stock');
-        $enlace=$request->get('EnlaceExterno');
-
-
-        $productos = Product::insert(["ID_Tienda"=>$idtienda, "Nombre"=>$nombre, "Foto"=>$foto, "Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]);
+        $enlace=$request->get('Enlace_externo');
+        Product::insert([["ID_Tienda"=>$idtienda, "Nombre"=>$nombre, "Foto"=>$foto, "Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]]);
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
         return view('tienda')->with(['ID'=>$idtienda,'productos'=>$productos]);
     }
