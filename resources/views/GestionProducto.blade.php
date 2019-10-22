@@ -16,7 +16,7 @@
 			<div id="container">
 				<form action="{{route('tienda2',$_SESSION['IDtienda'])}}" method="POST" enctype="multipart/form-data" onsubmit="comprobaciones()">
                 @csrf
-                    <label><b>Nombre: </b></label>
+                    <label><b>Nombre:</b></label>
                         <input type="text" name="Nombre" id="nombre" placeholder="Ej: Iphone 11" require><br><br>
                     <label><b>Foto: </b></label>
                         <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png" require><br><br>
