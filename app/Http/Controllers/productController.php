@@ -39,7 +39,7 @@ class productController extends Controller
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
         return view('tienda')->with(['ID'=>$idtienda,'productos'=>$productos]);
     }
-
+    
     public function eliminarProducto($IDproducto){
         Product::where("ID_Producto","=",$IDproducto)->delete();
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
@@ -47,8 +47,7 @@ class productController extends Controller
     }
 
     public function editarProducto($IDproducto) {
-        $stock=$_POST['Stock'];
-        $productos = Product::where("ID_Producto","=",$IDproducto)->update('Stock', "$stock");
-        return view('modificar')-with(['ID'=>$idtienda, 'productos'=>$productos]);
+        $producto = Product::where("ID_Producto","=",$IDproducto)->get();
+        return view('editar')->with(['producto'=>$producto]);
     }
 }

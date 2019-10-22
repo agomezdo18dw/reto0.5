@@ -21,7 +21,7 @@ Route::get('trabajador',function(){
 
 Route::post('tienda','workerControler@recibir_id_tienda')->name('IDtienda');
 
-Route::get('comprar', 'productController@ComprarProducto')->name('comprar');
+//Route::get('comprar', 'productController@ComprarProducto')->name('comprar');
 
 Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');
 
@@ -29,6 +29,6 @@ Route::post('GestionProducto','productController@GestionProducto')->name('Gestio
 
 Route::post('tienda/{id}','productController@vueltaTienda')->name('tienda2');
 
-Route::post('editar/{idproducto}','productController@editarProducto')->name('modificar');
+Route::post('editar/{idproducto}','productController@editarProducto')->name('editar');
 
 Route::post('eliminar/{idproducto}','productController@eliminarProducto');
