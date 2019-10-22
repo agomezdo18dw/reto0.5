@@ -56,12 +56,13 @@ class productController extends Controller
 
     public function modificarProducto(Request $request){
         $IDtienda=$request->get('IDtienda');
-        $IDproducto=$request->get('IDprod');
+        $IDproducto=$request->get('IDproducto');
         $descripcion=$request->get('Descripcion');
         $precio=$request->get('Precio');
         $stock=$request->get('Stock');
         $enlace=$request->get('Enlace_externo');
-        Product::where('ID_Producto',$IDproducto)->update(["Stock"=>$stock]);
+        Product::where("ID_Producto",$IDproducto)->update(["Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]);
+        echo $IDproducto." ".$stock;
         $productos = Product::where('ID_Tienda',$IDtienda)->get();
         return view('tienda')->with(['productos'=>$productos , 'ID'=>$IDtienda]);
     }

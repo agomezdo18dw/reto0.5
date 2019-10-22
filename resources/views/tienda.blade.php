@@ -32,7 +32,7 @@
 									@else
 										<h4>Stock: {{$producto->Stock}}</h4><br>
 									@endif								
-									<h4><a href="http://{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
+									<h4><a href="http://{{$producto->EnlaceExterno}}" target="_BLANK">{{$producto->EnlaceExterno}}</a></h4><br>
 									<form method="post" action="{{route('editar')}}">
 										@csrf
 										<input type="hidden" name="IDtienda" value="{{$_SESSION['IDtienda']}}">

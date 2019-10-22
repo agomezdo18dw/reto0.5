@@ -16,6 +16,8 @@
                 <div id="container">
                     <form action="{{route('modificar')}}" method="POST" enctype="multipart/form-data">
                     @csrf
+                        <label><b>ID:</b></label>
+                            <input type="number" name="IDproducto" value="{{$producto->ID_Producto}}" readOnly><br><br>
                         <label><b>Nombre:</b></label>
                             <input type="text" name="Nombre" value="{{$producto->Nombre}}" disabled><br><br>
                         <label><b>Foto: </b></label>
@@ -29,7 +31,6 @@
                         <label><b>Enlace externo: </b></label>
                             <input type="text" name="Enlace_externo" value="{{$producto->EnlaceExterno}}" require><br><br>
                         <input type="hidden" name="IDtienda" value="{{$_SESSION['IDtienda']}}">
-                        <input type="text" name="IDprod" value="{{$producto->ID_Producto}}">
                         <input type="submit" name="Modificar" value="Modificar producto" id="añadir">
                     </form>
                 </div>
