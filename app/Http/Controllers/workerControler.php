@@ -9,7 +9,7 @@ class workerControler extends Controller
 {
     public function recibir_id_tienda(Request $respuesta){
         $ID=$respuesta->input("Tiendas");
-        $productos = Product::all()->where('ID_Tienda' === $ID);
+        $productos = Product::where("ID_Tienda","=",$ID)->get();
         return view('tienda')->with(['ID'=>$ID,'productos'=>$productos]); 
     }
 }
