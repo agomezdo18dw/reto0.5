@@ -21,7 +21,7 @@ Route::get('trabajador',function(){
 
 Route::post('tienda','workerControler@recibir_id_tienda')->name('IDtienda');
 
-//Route::get('comprar', 'productController@ComprarProducto')->name('comprar');
+Route::get('comprar', 'productController@ComprarProducto')->name('comprar');
 
 Route::get('tiendas', 'productController@recogerProductos')->name('tiendas');
 
