@@ -62,7 +62,6 @@ class productController extends Controller
         $stock=$request->get('Stock');
         $enlace=$request->get('Enlace_externo');
         Product::where("ID_Producto",$IDproducto)->update(["Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]);
-        echo $IDproducto." ".$stock;
         $productos = Product::where('ID_Tienda',$IDtienda)->get();
         return view('tienda')->with(['productos'=>$productos , 'ID'=>$IDtienda]);
     }
