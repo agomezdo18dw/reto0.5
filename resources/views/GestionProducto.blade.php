@@ -11,8 +11,8 @@
         @include('includes.nav')
         <script type="text/javascript" src="{{ URL::asset('js/validaciones.js') }}"></script>
         <section>
-			<h1 class="TituloGestion">Gestion de productos</h1>
-            <h3 class="TituloGestion">Añadir Producto</h3>
+			<h1 class="TituloGestion trn" data-trn-key="TituloGestion">Gestion de productos</h1>
+            <h3 class="TituloGestion trn" data-trn-key="SubTituloGestion">Añadir Producto</h3>
 			<div id="container">
 				<form action="{{route('tienda2',$_SESSION['IDtienda'])}}" method="POST" enctype="multipart/form-data" onsubmit="comprobaciones()">
                 @csrf

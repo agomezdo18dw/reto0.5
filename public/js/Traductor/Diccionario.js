@@ -49,6 +49,33 @@ var dict = {
 					eus:"Igande eta jai egunak (itxita)",
 					esp:"Domingo y festivos (cerrado)",
 				},
+				"TrabajadorTitulo":{
+					eng:"What store do you work in?",
+					eus:"Zein dendatan lan egiten duzu?",
+					esp:"¿En que tienda trabajas?",
+				},
+				"Tiendas":{
+					eng:"Stores",
+					eus:"Dendak",
+					esp:"Tiendas",
+				},
+				"TituloGestion":{
+					eng:"Product Management",
+					eus:"Produktuen Kudeaketa",
+					esp:"Gestion de Productos",
+				},
+				"SubTituloGestion":{
+					eng:"Add Product",
+					eus:"Produktua gehitu",
+					esp:"Añadir Producto",
+				},
+				"SubTituMOdifi":{
+					eng:"Modify product",
+					eus:"Aldatu produktua",
+					esp:"Modificar producto",
+				},
+				
+
 }
 
 function traducir(idioma){
