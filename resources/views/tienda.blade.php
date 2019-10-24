@@ -32,15 +32,12 @@
 									@else
 										<h4>Stock : {{$producto->Stock}}</h4><br>
 									@endif
-<<<<<<< HEAD
 									<h4><a href="{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
 									<form method="post" action="{{route('editar', $producto->ID_Producto)}}">
 										@csrf
 										<input type="submit" name="ModificarProducto" value="Modificar producto">
 									</form>
-=======
 									<h4><a href="http://{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
->>>>>>> 9d9858d6db17def245c1a165271f272ad120c04a
 									<button name="EliminarProducto" onclick="Route('eliminar','{{$producto->ID_Producto}}')">Eliminar</button>
 								</div>	
 						@endforeach
