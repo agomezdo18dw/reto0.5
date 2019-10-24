@@ -37,23 +37,32 @@ class productController extends Controller
         $enlace=$request->get('Enlace_externo');
         Product::insert([["ID_Tienda"=>$idtienda, "Nombre"=>$nombre, "Foto"=>$foto, "Descripcion"=>$descripcion, "Precio_venta"=>$precio, "Stock"=>$stock, "EnlaceExterno"=>$enlace]]);
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
-        return view('tienda')->with(['ID'=>$idtienda,'productos'=>$productos]);
+        return view('tienda')->with(['productos'=>$productos]);
     }
     
-    public function eliminarProducto($IDproducto){
+    public function eliminarProducto($IDproducto,Request $request){
+        $idtienda=$request->get('IDtienda');
         Product::where("ID_Producto","=",$IDproducto)->delete();
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
-        return view('tienda2')->with(['ID'=>$idtienda,'productos'=>$productos]);
+        return view('tienda')->with(['productos'=>$productos, 'ID' => $idtienda]);
     }
 
-    public function editarProducto($IDproducto) {
+    public function editarProducto(Request $request) {
+        $IDtienda=$request->get('IDtienda');
+        $IDproducto=$request->get('IDprod');
         $producto = Product::where("ID_Producto","=",$IDproducto)->get();
-        return view('editar')->with(['producto'=>$producto]);
+        return view('editar')->with(['producto'=>$producto, 'ID' => $IDtienda]);
     }
 
-    public function modificarProducto($IDproducto, request $request){
+    public function modificarProducto(Request $request){
+        $IDtienda=$request->get('IDtienda');
+        $IDproducto=$request->get('IDprod');
+        $descripcion=$request->get('Descripcion');
+        $precio=$request->get('Precio');
         $stock=$request->get('Stock');
-        $producto = Product::where("ID_Producto","=",$IDproducto)->update('Stock', $stock);
-        vueltaTienda();
+        $enlace=$request->get('Enlace_externo');
+        Product::where('ID_Producto',$IDproducto)->update(["Stock"=>$stock]);
+        $productos = Product::where('ID_Tienda',$IDtienda)->get();
+        return view('tienda')->with(['productos'=>$productos]);
     }
 }

@@ -189,6 +189,7 @@ footer{
 #container{
 	margin-top:2%;
 	text-align:center;
+	font-size: 14	px;
 }
 /*----------------fin tienda------------------*/
 /*----------------fin contenido---------------*/
@@ -256,6 +257,12 @@ footer{
 	width: 60%; 
 }
 /*-----------------Fin Tiendas----------------*/
+#añadir{
+	margin-bottom: 5em;
+}
+#Descripcion{
+	width: 25em;
+}
 /*------------------Responsive----------------*/
 @media screen and (max-width: 1000px) {
 	body{
