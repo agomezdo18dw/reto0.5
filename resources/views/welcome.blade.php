@@ -34,7 +34,7 @@
 						</li>
 						<li><strong class="trn" data-trn-key="InfHorario">Horario:</strong>
 							<ul class="subinfo">
-								<li class="trn" data-trn-key="InfDatHorario1">Lunes - Sabado (10:00 - 22:10)</li>
+								<li class="trn" data-trn-key="InfDatHorario1">Lunes - Sabado (10:00 - 22:00)</li>
 								<li class="trn" data-trn-key="InfDatHorario2">Domingo y festivos (cerrado)</li>
 							</ul>
 						</li>
