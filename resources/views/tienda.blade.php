@@ -32,8 +32,11 @@
 										<h4>Stock : {{$producto->Stock}}</h4><br>
 									@endif
 									<h4><a href="{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
+									<form method="post" action="{{route('editar', $producto->ID_Producto)}}">
+										@csrf
+										<input type="submit" name="ModificarProducto" value="Modificar producto">
+									</form>
 									<button name="EliminarProducto" onclick="Route('eliminar','{{$producto->ID_Producto}}')">Eliminar</button>
-									<button name="ModificarProducto" onclick="Route('editar','{{$producto->ID_Producto}}')">Modificar</button>
 								</div>	
 						@endforeach
 				</div>
