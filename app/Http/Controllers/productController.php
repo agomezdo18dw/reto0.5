@@ -29,7 +29,7 @@ class productController extends Controller
     public function vueltaTienda(Request $ID_tienda){
         $idtienda=$ID_tienda;
         $nombre=$_POST['Nombre'];
-        $foto=$_POST['Foto'];
+        
         $descripcion=$_POST['Descripcion'];;
         $precio=$_POST['Precio'];;
         $stock=$_POST['Stock'];
