@@ -11,7 +11,7 @@
 							@if($tienda->ID_Tienda === $producto->ID_Tienda)
 								<div class="producto">
 									<h3>{{$producto->Nombre}}</h3><br>
-									<img src="{{$producto->Foto}}" class="imgProd">
+									<img src="img/Productos/{{$producto->ID_Tienda}}/{{$producto->Foto}}" class="imgProd">
 									<div class="descPrecio">
 										<h4>{{$producto->Precio_venta}}€</h4><br>
 										<p>{{$producto->Descripcion}}</p><br>
