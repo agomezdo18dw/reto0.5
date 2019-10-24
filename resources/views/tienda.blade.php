@@ -37,7 +37,16 @@
 										@csrf
 										<input type="submit" name="ModificarProducto" value="Modificar producto">
 									</form>
+<<<<<<< HEAD
+=======
+									<h4><a href="http://{{$producto->EnlaceExterno}}">{{$producto->EnlaceExterno}}</a></h4><br>
+<<<<<<< HEAD
+									<button name="EliminarProducto><a href='Route('editar','{{$producto->ID_Producto}}')'">Eliminar</a></button>
+									<button name="ModificarProducto" onclick="Route('editar','{{$producto->ID_Producto}}')">Modificar</button>
+=======
+>>>>>>> bb34ab86628558ce2b113605aa25c91cd4cea936
 									<button name="EliminarProducto" onclick="Route('eliminar','{{$producto->ID_Producto}}')">Eliminar</button>
+>>>>>>> 57003eb139d7e310bbc257e5f41fb82417a3495d
 								</div>	
 						@endforeach
 				</div>
