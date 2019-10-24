@@ -44,4 +44,10 @@ class productController extends Controller
         $productos = Product::where("ID_Tienda","=",$idtienda)->get();
         return view('tienda2')->with(['ID'=>$idtienda,'productos'=>$productos]);
     }
+
+    public function editarProducto($IDproducto) {
+        $stock=$_POST['Stock'];
+        $productos = Product::where("ID_Producto","=",$IDproducto)->update('Stock', "$stock");
+        return view('modificar')-with(['ID'=>$idtienda, 'productos'=>$productos]);
+    }
 }
