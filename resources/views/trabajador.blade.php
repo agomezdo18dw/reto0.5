@@ -3,7 +3,7 @@
         @include('includes.nav')
 		<section id="Sectrabajador">
 			<div id="seleccionTienda">
-                <h2>En que tienda trabajas?</h2>
+                <h2 class="trn" data-trn-key="TrabajadorTitulo">¿En que tienda trabajas?</h2>
                 <form action="{{route('IDtienda')}}" method="post">
                 @csrf
                     <select size="1" name="Tiendas" id="ListaTiendas">

@@ -2,7 +2,7 @@
         @include('includes.header')
         @include('includes.nav')
 		<section id="tiendas">
-			<h1>Tiendas</h1>
+			<h1 class="trn" data-trn-key="Tiendas">Tiendas</h1>
 			@foreach($tiendas as $tienda)
 				<div class="tienda">	
 					<h2>{{$tienda->Nombre}}</h2>

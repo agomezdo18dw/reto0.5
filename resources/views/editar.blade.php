@@ -10,8 +10,8 @@
         @include('includes.header')
         @include('includes.nav')
         <section>
-			<h1 class="TituloGestion">Gestion de productos</h1>
-            <h3 class="TituloGestion">Modificar producto</h3>
+			<h1 class="TituloGestion trn" data-trn-key="TituloGestion">Gestion de productos</h1>
+            <h3 class="TituloGestion trn" data-trn-key="SubTituMOdifi">Modificar producto</h3>
             @foreach($producto as $producto)
                 <div id="container">
                     <form action="{{route('modificar')}}" method="POST" enctype="multipart/form-data">

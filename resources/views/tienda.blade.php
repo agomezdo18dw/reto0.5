@@ -10,7 +10,7 @@
         @include('includes.header')
         @include('includes.nav')
 		<section>
-			<h1 class="TituloGestion">Gestion de productos</h1>
+			<h1 class="TituloGestion trn" data-trn-key="TituloGestion">Gestion de productos</h1>
 			<div id="submenu">
 				<form method="post" action="{{route('GestionProducto')}}">
 				@csrf
