@@ -36,7 +36,7 @@ $(document).ready(function() {
             boton.disabled = true;
         }
         else if (tieneSimbolosPrecio(precio.value)){
-            p.innerHTML = "Los precios solo pueden tener numeros y dos decimales (usar . en vez de ,)";
+            p.innerHTML = "Los precios solo pueden tener numeros y dos decimales (usar , en vez de .)";
             boton.disabled = true;
         }
         else if (precio.value < 0){
