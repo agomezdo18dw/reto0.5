@@ -1,26 +1,18 @@
-//VALIDACIONES
-let comprobaciones = () => {
-    let nombre = document.getElementById("nombre");
-    let descripcion = document.getElementById("foto");
-    let precio = document.getElementById("precio");
-    let stock = document.getElementById("stock");
-    let enlace = document.getElementById("enlace");
-    console.log('todo ok');
-
-    
-}
-let redireccionar =()=>{
-    let ID_tienda=documnt.getElementById("IDtienda");
-    let texto=true;
-    if(texto==true){
-        location.href ="{{route('tienda2',"+ID_tienda+")}}";
-    }
-    else
-    {
-        alert("algo va mal");
-    }
-    
-}
+//------------VALIDACIONES----------
+$(document).ready(function() {
+    $('input').keyup(function(){
+        let nombre = document.getElementById("nombre");
+        let descripcion = document.getElementById("foto");
+        let precio = document.getElementById("precio");
+        let stock = document.getElementById("stock");
+        let enlace = document.getElementById("enlace");
+        let p = document.getElementById("p");
+        if (tieneNumeros(nombre.value) || tieneSimbolos(nombre.value))
+            p.innerHTML = "Los nombres solo pueden tener letras";
+        else   
+            p.innerHTML = "";
+    });
+});
 //Funcion que comprueba si hay numeros en el texto que le introduzcamos
 let tieneNumeros = (texto) => {
     //Creamos un string con los numeros
