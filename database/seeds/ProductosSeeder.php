@@ -18,7 +18,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'Ultimo movil lanzado por apple',
             'Precio_venta' => '700',
             'Stock' => '0',
-            'EnlaceExterno' => 'www.google.com'
+            'EnlaceExterno' => 'www.apple.com/es'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '1',
@@ -27,7 +27,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'Ultimo movil lanzado por Samsung',
             'Precio_venta' => '999.99',
             'Stock' => '5',
-            'EnlaceExterno' => 'www.google.com'
+            'EnlaceExterno' => 'www.samsung.com/es/'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '1',
@@ -36,7 +36,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'Ultimo movil lanzado por OnePlus',
             'Precio_venta' => '539.99',
             'Stock' => '8',
-            'EnlaceExterno' => 'www.google.com'
+            'EnlaceExterno' => 'www.oneplus.com/es/'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '2',
@@ -45,7 +45,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'Bolso comodisimo',
             'Precio_venta' => '19.99',
             'Stock' => '20',
-            'EnlaceExterno' => 'www.google.com'
+            'EnlaceExterno' => 'www.zara.com/es/'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '2',
@@ -54,7 +54,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'Blusa',
             'Precio_venta' => '29.99',
             'Stock' => '30',
-            'EnlaceExterno' => 'www.google.com'
+            'EnlaceExterno' => 'www.zara.com/es/'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '3',
@@ -63,7 +63,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'El juego mas vendido hasta la fecha',
             'Precio_venta' => '14.99',
             'Stock' => '4',
-            'EnlaceExterno' => 'www.google.com'
+            'EnlaceExterno' => 'www.rockstargames.com'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '4',
@@ -72,7 +72,7 @@ class ProductosSeeder extends Seeder
             'Descripcion' => 'Un juego muy bueno',
             'Precio_venta' => '9.99',
             'Stock' => '2',
-            'EnlaceExterno' => 'www.gta.com'
+            'EnlaceExterno' => 'www.rockstargames.com'
         ]);
         DB::table('Productos')->insert([
             'ID_Tienda' => '5',
