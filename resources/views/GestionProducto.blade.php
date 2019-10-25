@@ -23,7 +23,7 @@
                     <label><b>Descripción: </b></label>
                         <input type="textarea" name="Descripcion" id="descripcion" placeholder="Ej: Ultimo movil lanzado por Apple" require><br><br>
                     <label><b>Precio: </b></label>
-                        <input type="number" step="0.01" name="Precio" id="precio" placeholder="Ej: 699.99" require><br><br>
+                        <input type="number" step="0.01" name="Precio" id="precio" placeholder="Ej: 699,99" require><br><br>
                     <label><b>Stock: </b></label>
                         <input type="number" name="Stock" id="stock" placeholder="Ej: 35" require><br><br>
                     <label><b>Enlace externo: </b></label>
