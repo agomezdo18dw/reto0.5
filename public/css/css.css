@@ -258,10 +258,14 @@ footer{
 }
 /*-----------------Fin Tiendas----------------*/
 #añadir{
-	margin-bottom: 5em;
+	margin-bottom: 0;
 }
 #Descripcion{
 	width: 25em;
+}
+#p {
+	margin: 2em 0;
+	color: red;
 }
 /*------------------Responsive----------------*/
 @media screen and (max-width: 1000px) {
