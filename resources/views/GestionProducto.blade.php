@@ -9,7 +9,7 @@
 @include('includes.head')
         @include('includes.header')
         @include('includes.nav')
-        <script type="text/javascript" src="{{ URL::asset('js/validaciones.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/Validaciones/AñadirProd.js') }}"></script>
         <section>
 			<h1 class="TituloGestion trn" data-trn-key="TituloGestion">Gestion de productos</h1>
             <h3 class="TituloGestion trn" data-trn-key="SubTituloGestion">Añadir Producto</h3>
