@@ -1,6 +1,9 @@
 //------------VALIDACIONES----------
+//Esperamos a que la pagina se cargue entera
 $(document).ready(function() {
+    //Por cada pulsacion de teclado realizada en un input se ejecutara la funcion
     $('input').keyup(function(){
+        //Recogemos los datos necesarios
         let nombre = document.getElementById("nombre");
         let foto = document.getElementById("foto");
         let descripcion = document.getElementById("descripcion");
@@ -9,6 +12,9 @@ $(document).ready(function() {
         let enlace = document.getElementById("enlace");
         let p = document.getElementById("p");
         let boton = document.getElementById("añadir");
+        /*Comprobamos si los datos son validos si no es asi pone el boton deshabilitado 
+         *y muestra porque no es valido
+         */
         if (vacio(nombre.value)) {
             p.innerHTML = "No puedes dejar el nombre vacio";
             boton.disabled = true;
@@ -65,16 +71,21 @@ $(document).ready(function() {
             p.innerHTML = "La URL no es valida";
             boton.disabled = true;
         }
+        /*Una vez todos los datos son validos pone el boton
+         *En modo habilitado y elimina el mensaje
+         */
         else { 
             p.innerHTML = "";
             boton.disabled = false;
         }
     });
 });
+//--------Funciones que comprueba los datos--------
+//Funcion que comprueba si un dato tiene letras
 let tieneLetras = (texto) => {
-    //Creamos un string con los numeros
+    //Creamos un string con las letras
     const letras = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-    //Bucle que comprueba si en el texto hay numeros al leerlo  letra por letra y compararlo con el string de antes
+    //Bucle que comprueba si en el texto hay letras al leerlo caracter por caracter y compararlo con el string de antes    
     for(i=0; i < texto.length; i++){
         if (letras.indexOf(texto.charAt(i),0) != -1){
             return true;
@@ -82,11 +93,11 @@ let tieneLetras = (texto) => {
     }
     return false;
 }
-//Funcion que comprueba si hay numeros en el texto que le introduzcamos
+//Funcion que comprueba si hay numeros en el dato que le introduzcamos
 let tieneNumeros = (texto) => {
     //Creamos un string con los numeros
     const numeros = "0123456789";
-    //Bucle que comprueba si en el texto hay numeros al leerlo  letra por letra y compararlo con el string de antes
+    //Bucle que comprueba si en el texto hay numeros al leerlo digito por digito y compararlo con el string de antes
     for(i=0; i < texto.length; i++){
         if (numeros.indexOf(texto.charAt(i),0) != -1){
             return true;
@@ -94,7 +105,7 @@ let tieneNumeros = (texto) => {
     }
     return false;
 }
-//Funcion que comprueba si hay simbolos en el texto que le introduzcamos
+//Funcion que comprueba si hay simbolos en el dato que le introduzcamos
 let tieneSimbolos = (texto) => {
     //Creamos un string con los simbolos
     const numeros = "!¡=?¿.,/º&%$'-_;:<>[]{}";
@@ -106,11 +117,11 @@ let tieneSimbolos = (texto) => {
     }
     return false;
 } 
-//Funcion que comprueba si hay simbolos en el texto que le introduzcamos, pero permite los guiones
+//Funcion que comprueba si hay simbolos en el nombre que le introduzcamos, pero permite los guiones
 let tieneSimbolosNombre = (texto) => {
     //Creamos un string con los simbolos
     const numeros = "!¡=?¿.,/º&%$'_;:<>[]{}";
-    //Bucle que comprueba si en el texto hay simbolos al leerlo letra por letra y compararlo con el string de antes
+    //Bucle que comprueba si en el texto hay simbolos al leerlo digito por digito y compararlo con el string de antes
     for(i=0; i < texto.length; i++){
         if (numeros.indexOf(texto.charAt(i),0) != -1){
             return true;
@@ -118,7 +129,7 @@ let tieneSimbolosNombre = (texto) => {
     }
     return false;
 }
-//Funcion que comprueba si hay simbolos en el texto que le introduzcamos, pero permite los puntos
+//Funcion que comprueba si hay simbolos en el precio que le introduzcamos, pero permite los puntos
 let tieneSimbolosPrecio = (texto) => {
     //Creamos un string con los simbolos
     const numeros = "!¡=?¿,/º&%$'-_;:<>[]{}";
@@ -130,7 +141,7 @@ let tieneSimbolosPrecio = (texto) => {
     }
     return false;
 }
-//Funcion que comprueba si hay espacios en el texto que le introduzcamos
+//Funcion que comprueba si hay espacios en el dato que le introduzcamos
 let tieneBlanco = (texto) => {
     //Creamos un string con el espacio
     const espacio = " ";
@@ -150,6 +161,7 @@ let vacio = (texto) => {
     else 
         return false;
 }
+//Funcion que cuneta los numeros decimales del dato que le introduzcamos
 let numeroDecimales = (texto) => {
     var str = "" + texto;
     var index = str.indexOf('.');
@@ -159,6 +171,9 @@ let numeroDecimales = (texto) => {
         return 0;
     }
 }
+/*Funcion que comprueba si el dato que le introducimos es una URL
+ *Al comprobar si dispone de tres w y dos puntos
+ */
 let esURL = (texto) => {
     let w = 'w';
     var contw = 0;
